@@ -1,1 +1,1 @@
-export const initialContent = `<h1 placeholder="Comece!" className="w-400px"></h1>`
+export const initialContent = `<h1>Apenas faça!</h1>`

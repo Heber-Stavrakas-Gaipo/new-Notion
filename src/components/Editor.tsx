@@ -4,7 +4,7 @@ import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
 import { createLowlight } from "lowlight";
 import js from "highlight.js/lib/languages/javascript";
 import { RxFontBold, RxFontItalic, RxStrikethrough, RxCode, RxChevronDown, RxChatBubble } from "react-icons/rx";
-
+import { initialContent } from "./initialContent";
 import "highlight.js/styles/tokyo-night-dark.css";
 import { BubbleButton } from "./BubbleButton";
 import { SuggestionButton } from "./SuggestionButton";
@@ -23,6 +23,7 @@ export function Editor() {
         lowlight,
       }),
     ],
+    content: initialContent,
     editorProps: {
       attributes: {
         class: "outline-none",
